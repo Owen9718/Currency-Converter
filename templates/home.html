@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action="/convert" name="form" method="post">
+    <input type="text" name="conv_from" placeholder="Convert From:">
+    <br>
+    <input type="text" name="conv_to" placeholder="Convert To:">
+    <br>
+    <input type="text" name="amount" placeholder="Amount:">
+    <br>
+    <button>Submit!</button>
+</form>
+{% endblock %}

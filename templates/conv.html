@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action="/">
+    {% if err %}
+    {{err}}
+
+    {% endif %}
+
+    {% if total %}
+    <p>Your total is {{symbol}}{{total}}</p>
+    {% endif %}
+    <button>Home</button>
+</form>
+{% endblock %}
